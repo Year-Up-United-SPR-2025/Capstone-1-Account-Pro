@@ -47,6 +47,10 @@ public class Main {
         } catch (IOException e) {
             System.out.println("Error reading from file: " + e.getMessage());
         }
+
+        //Exit app
+        ExitHandler exitHandler = new ExitHandler(scanner);
+        exitHandler.waitForExit();
     }
 }
 
