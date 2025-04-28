@@ -32,6 +32,10 @@ public class Main {
             double amount = scanner.nextDouble();
             scanner.nextLine();
 
+            System.out.println("Is this a debit or credit Transaction? (Enter c or d): ");
+            double CorD = scanner.nextDouble();
+            scanner.nextLine();
+
             // Save to file
             Reader_Writer_Time.saveDeposit(date, description, vendor, amount);
 
