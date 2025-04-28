@@ -9,7 +9,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Show current time once at the start
-        //Remeber that if you see an a at the end of hh:mm it means am/pm depending on where you live
+        //Remember that if you see an at the end of hh:mm it means am/pm depending on where you live
+        //Another thing to remember is that when using lower hh (1-12) and upper case HH (1-24)
         LocalTime now = LocalTime.now();
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm a");
         System.out.println("Current time: " + now.format(timeFormatter));
@@ -32,9 +33,9 @@ public class Main {
             double amount = scanner.nextDouble();
             scanner.nextLine();
 
-            System.out.println("Is this a debit or credit Transaction? (Enter c or d): ");
-            double CorD = scanner.nextDouble();
-            scanner.nextLine();
+//            System.out.println("Is this a debit or credit Transaction? (Enter c or d): ");
+//            double CorD = scanner.nextDouble();
+//            scanner.nextLine();
 
             // Save to file
             Reader_Writer_Time.saveDeposit(date, description, vendor, amount);
@@ -51,7 +52,7 @@ public class Main {
         }
 
         // After finishing, display all transactions
-        System.out.println("\nID   |Date     | Time    | Description              | Vendor           | Amount            ");
+        System.out.println("\nID   |Date     |Time    |Description              |Vendor           |Amount            ");
         Reader_Writer_Time.readDeposits();
 
         //Exit app
