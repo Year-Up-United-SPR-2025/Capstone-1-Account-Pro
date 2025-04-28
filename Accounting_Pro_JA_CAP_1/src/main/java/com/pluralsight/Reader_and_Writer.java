@@ -12,9 +12,9 @@ public class Reader_and_Writer {
         this.filePath = filePath;
     }
 
-    public static void saveDeposit(String name, String CredorDeb, double amount, String date) {
+    public static void saveDeposit(String name, String CredorDeb, double amount, String date, String time) {
         // Format: name|CredorDeb|amount|date
-        String depositRecord = name + "|" + CredorDeb + "|" + amount + "|" + date;
+        String depositRecord = name + "|" + CredorDeb + "|" + amount + "|" + date + "|" + time;
 
         // Write to file
         try (FileWriter writer = new FileWriter(filePath, true)) {
