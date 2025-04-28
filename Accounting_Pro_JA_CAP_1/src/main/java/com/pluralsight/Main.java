@@ -9,6 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Show current time once at the start
+        //Remeber that if you see an a at the end of hh:mm it means am/pm depending on where you live
         LocalTime now = LocalTime.now();
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm a");
         System.out.println("Current time: " + now.format(timeFormatter));
@@ -46,7 +47,7 @@ public class Main {
         }
 
         // After finishing, display all transactions
-        System.out.println("\nCurrent transactions:");
+        System.out.println("\nDate     | Time    | Description              | Vendor           | Amount            ");
         Reader_Writer_Time.readDeposits();
 
         //Exit app
