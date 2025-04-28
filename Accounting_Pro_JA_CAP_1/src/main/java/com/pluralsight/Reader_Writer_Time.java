@@ -1,29 +1,43 @@
 package com.pluralsight;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+
 public class Reader_Writer_Time {
-    // CSV file name
+
     private static final String FILE_NAME = "transactions.csv";
 
-    public static void saveDeposit(String name, String CredorDeb, double amount, String date) {
+    // Save a deposit record
+    public static void saveDeposit(String date, String description, String vendor, double amount) {
         // Get current time
         LocalTime now = LocalTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-        String time = now.format(formatter); // Get time in HH:mm:ss format
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm a");
+        String time = now.format(timeFormatter);
 
-        // Format: name|CredorDeb|amount|date|time
-        String depositRecord = name + "," + CredorDeb + "," + amount + "," + date + "," + time + "\n";
+        // Format: date|time|description|vendor|amount
+        String depositRecord = date + "|" + time + "|" + description + "|" + vendor + "|" + amount;
 
-        // Write the deposit record to the CSV file
-        try (FileWriter writer = new FileWriter(FILE_NAME, true)) {  // Append mode
-            writer.write(depositRecord);  // Write the log entry to the file
+        try (FileWriter writer = new FileWriter(FILE_NAME, true)) {
+            writer.write(depositRecord + "\n");
         } catch (IOException e) {
-            System.out.println("An error occurred while writing to the file.");
-            e.printStackTrace();
+            System.out.println("Error writing to file: " + e.getMessage());
+        }
+    }
+
+    // Read and display all deposit records
+    public static void readDeposits() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line); // Print each record
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading from file: " + e.getMessage());
         }
     }
 }
