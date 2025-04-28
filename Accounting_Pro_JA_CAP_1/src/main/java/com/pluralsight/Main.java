@@ -19,23 +19,23 @@ public class Main {
         while (keepRunning) {
             System.out.println("\nEnter transaction details:");
 
-            System.out.print("Date (YYYY-MM-DD): ");
+            System.out.print("Enter the Date (YYYY-MM-DD): ");
             String date = scanner.nextLine();
 
-            System.out.print("Description: ");
+            System.out.print("Enter the Description: ");
             String description = scanner.nextLine();
 
-            System.out.print("Vendor: ");
+            System.out.print("Add your Vendor: ");
             String vendor = scanner.nextLine();
 
-            System.out.print("Amount: ");
+            System.out.print("Enter the Amount: ");
             double amount = scanner.nextDouble();
             scanner.nextLine();
 
             // Save to file
             Reader_Writer_Time.saveDeposit(date, description, vendor, amount);
 
-            System.out.println("\nTransaction saved!");
+            System.out.println("\nTransaction Added!");
 
             // Ask if user wants to add another transaction
             System.out.print("\nDo you want to add another transaction? (y/n): ");
@@ -47,7 +47,7 @@ public class Main {
         }
 
         // After finishing, display all transactions
-        System.out.println("\nDate     | Time    | Description              | Vendor           | Amount            ");
+        System.out.println("\nID   |Date     | Time    | Description              | Vendor           | Amount            ");
         Reader_Writer_Time.readDeposits();
 
         //Exit app
