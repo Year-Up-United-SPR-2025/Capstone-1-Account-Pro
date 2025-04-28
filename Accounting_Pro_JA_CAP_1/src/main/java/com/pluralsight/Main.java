@@ -47,19 +47,6 @@ public class Main {
         } catch (IOException e) {
             System.out.println("Error reading from file: " + e.getMessage());
         }
-
-        //Exit from Program
-        char exitChar = 'x';
-        System.out.println("Press x to" + exitChar + "exit app");
-        while (true){
-            String exiting = scanner.nextLine();
-            if (exiting.length() == 1 && exiting.charAt(0) == exitChar){
-                System.out.println("Closing App Now...........");
-                System.exit(0);
-            } else {
-                System.out.println("You Entered:" + exiting);
-            }
-        }
     }
 }
 
