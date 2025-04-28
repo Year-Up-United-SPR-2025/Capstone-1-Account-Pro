@@ -1,14 +1,11 @@
 package com.pluralsight;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Reader_and_Writer readerAndWriter = new Reader_and_Writer("transactions.csv");
 
         //Deposit
         System.out.println("What is your Name: ");
@@ -23,30 +20,12 @@ public class Main {
         System.out.println("Enter date (YYYY-MM-DD):");
         String date = scanner.nextLine();
 
-        // Format: name,amount,date
-        String depositRecord = name + "|" + CredorDeb + "|" + amount + "|" + date;
-
         //Ledger
         System.out.println("Ledger Opening Now............");
 
-        //Write to file
-        try (FileWriter writer = new FileWriter("transactions.csv", true)) {
-            writer.write(depositRecord + "\n");
-            System.out.println("Deposit saved successfully.");
-        } catch (IOException e) {
-            System.out.println("Error writing to file: " + e.getMessage());
-        }
-
-        // Read from the file
-        System.out.println("Current contents of transactions.csv:");
-        try (BufferedReader reader = new BufferedReader(new FileReader("transactions.csv"))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException e) {
-            System.out.println("Error reading from file: " + e.getMessage());
-        }
+        //Calls Reader and Writer Class
+        Reader_and_Writer.saveDeposit(name, CredorDeb, amount, date);
+        Reader_and_Writer.Reader();
 
         //Exit app
         ExitHandler exitHandler = new ExitHandler(scanner);
