@@ -44,6 +44,10 @@ public class Main {
         } catch (IOException e) {
             System.out.println("Error reading from file: " + e.getMessage());
         }
+
+        //Exit from Program
+        System.out.println("Exiting App......");
+        System.exit(0);
     }
 }
 
