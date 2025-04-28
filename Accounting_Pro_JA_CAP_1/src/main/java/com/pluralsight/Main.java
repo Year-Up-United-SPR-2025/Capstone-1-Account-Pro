@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.util.*;
 import java.util.Scanner;
 
 public class Main {
@@ -8,10 +9,14 @@ public class Main {
         Reader_and_Writer readerAndWriter = new Reader_and_Writer("transactions.csv");
 
 
-        System.out.println("Enter date (YYYY-MM-DD):");
+        System.out.println("Enter date (YYYY-MM-DD): ");
         String date = scanner.nextLine();
 
         //Time
+        Time logger = new Time();
+        // Call the logInputs method
+        logger.run();
+        scanner.nextLine();
 
         System.out.println("What is your Name: ");
         String name = scanner.nextLine();
