@@ -26,6 +26,9 @@ public class Main {
         // Format: name,amount,date
         String depositRecord = name + "|" + CredorDeb + "|" + amount + "|" + date;
 
+        //Ledger
+        System.out.println("Ledger Opening Now............");
+
         //Write to file
         try (FileWriter writer = new FileWriter("transactions.csv", true)) {
             writer.write(depositRecord + "\n");
@@ -46,8 +49,17 @@ public class Main {
         }
 
         //Exit from Program
-        System.out.println("Exiting App......");
-        System.exit(0);
+        char exitChar = 'x';
+        System.out.println("Press x to" + exitChar + "exit app");
+        while (true){
+            String exiting = scanner.nextLine();
+            if (exiting.length() == 1 && exiting.charAt(0) == exitChar){
+                System.out.println("Closing App Now...........");
+                System.exit(0);
+            } else {
+                System.out.println("You Entered:" + exiting);
+            }
+        }
     }
 }
 
