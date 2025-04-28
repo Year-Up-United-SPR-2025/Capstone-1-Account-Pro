@@ -1,22 +1,15 @@
 package com.pluralsight;
 
-import java.util.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Reader_and_Writer readerAndWriter = new Reader_and_Writer("transactions.csv");
+        Reader_Writer_Time readerAndWriter = new Reader_Writer_Time();
 
 
         System.out.println("Enter date (YYYY-MM-DD): ");
         String date = scanner.nextLine();
-
-        //Time
-        Time logger = new Time();
-        // Call the logInputs method
-        logger.run();
-        scanner.nextLine();
 
         System.out.println("What is your Name: ");
         String name = scanner.nextLine();
@@ -32,9 +25,8 @@ public class Main {
         System.out.println("Ledger Opening Now............");
         String ledger = scanner.nextLine();
 
-        //Calls Reader and Writer Class
-        Reader_and_Writer.saveDeposit(name, CredorDeb, amount, date);
-        Reader_and_Writer.Reader();
+        //Calls Reader Writer Time Class
+//        Reader_Writer_Time.saveDeposit();
 
         //Exit app
         ExitHandler exitHandler = new ExitHandler(scanner);
