@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -71,6 +73,23 @@ public class LedgerTimeLIne {
 //                System.out.println(t);
 //            }
 //        }
+//    }
+
+//loading form transactions.csv
+//private void loadTransactionsFromCSV(String filename) {
+//    try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+//        String line;
+//        while ((line = br.readLine()) != null) {
+//            String[] parts = line.split(",");
+//            if (parts.length == 3) {
+//                String date = parts[0].trim();
+//                String vendor = parts[1].trim();
+//                double amount = Double.parseDouble(parts[2].trim());
+//                transactions.add(new Transaction(date, vendor, amount));
+//            }
+//        }
+//    } catch (Exception e) {
+//        System.out.println("Failed to load transactions: " + e.getMessage());
 //    }
 
 }
