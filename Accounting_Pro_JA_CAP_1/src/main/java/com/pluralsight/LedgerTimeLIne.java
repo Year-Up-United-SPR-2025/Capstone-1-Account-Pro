@@ -41,5 +41,36 @@ public class LedgerTimeLIne {
 //            }
 //        }
 //    }
+////Deposits
+//private void showDeposits() {
+//    System.out.println("\n=== Deposits ===");
+//    for (Transaction t : transactions) {
+//        if (t.amount > 0) {
+//            System.out.println(t);
+//        }
+//    }
+//}
+//
+//    //Payments
+//    private void showPayments() {
+//        System.out.println("\n=== Payments ===");
+//        for (Transaction t : transactions) {
+//            if (t.amount < 0) {
+//                System.out.println(t);
+//            }
+//        }
+//    }
+//
+//    //Show Reports
+//    private void showReports() {
+//        System.out.print("Enter vendor name to search: ");
+//        String vendor = scanner.nextLine().toLowerCase();
+//        System.out.println("\n=== Transactions Matching Vendor ===");
+//        for (Transaction t : transactions) {
+//            if (t.vendor.toLowerCase().contains(vendor)) {
+//                System.out.println(t);
+//            }
+//        }
+//    }
 
 }
