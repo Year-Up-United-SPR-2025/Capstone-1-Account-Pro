@@ -52,7 +52,7 @@ public class Main {
         }
 
         // After finishing, display all transactions
-        System.out.println("\nID   |Date     |Time    |Description              |Vendor           |Amount            ");
+        System.out.println("\nDate     |Time    |Description              |Vendor           |Amount            ");
         Reader_Writer_Time.readDeposits();
 
         //Exit app
