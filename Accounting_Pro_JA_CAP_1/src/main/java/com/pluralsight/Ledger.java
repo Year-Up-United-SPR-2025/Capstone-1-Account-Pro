@@ -11,6 +11,7 @@ public class Ledger {
         loadTransactionsFromCSV("transactions.csv");
     }
 
+    //HomeScreen
     public void showHome() {
         while (true) {
             System.out.println("\n=== Home Menu ===");
@@ -39,6 +40,7 @@ public class Ledger {
         }
     }
 
+    //Deposits
     private void showDeposits() {
         System.out.println("\n=== Deposits ===");
         for (Transaction t : transactions) {
@@ -48,6 +50,7 @@ public class Ledger {
         }
     }
 
+    //Payments
     private void showPayments() {
         System.out.println("\n=== Payments ===");
         for (Transaction t : transactions) {
@@ -57,6 +60,7 @@ public class Ledger {
         }
     }
 
+    //Show Reports
     private void showReports() {
         System.out.print("Enter vendor name to search: ");
         String vendor = scanner.nextLine().toLowerCase();
@@ -68,6 +72,7 @@ public class Ledger {
         }
     }
 
+    //loading form transactions.csv
     private void loadTransactionsFromCSV(String filename) {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
