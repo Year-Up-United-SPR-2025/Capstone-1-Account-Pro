@@ -4,10 +4,6 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-import java.time.*;
-import java.time.format.*;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         // Start the process from here
@@ -53,15 +49,11 @@ public class Main {
         }
 
         // After finishing, display all transactions (assuming the read method exists)
-        System.out.println("\nDate     |Time    |Description              |Vendor           |Amount            ");
+        System.out.println("\nDate|Time|Description|Vendor|Amount");
         Reader_Writer_Time.readDeposits();
 
         // Return to the Ledger home menu after finishing
         Ledger ledger = new Ledger();
         ledger.showHome();
-
-        // Exit app (assuming ExitHandler class exists)
-        ExitHandler exitHandler = new ExitHandler(scanner);
-        exitHandler.waitForExit();
     }
 }
