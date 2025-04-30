@@ -12,13 +12,14 @@ Some of the issues I came across were trying to read and write from the transact
 
 
 ![Screenshot 2025-04-30 120334](https://github.com/user-attachments/assets/96f1389f-da2b-4c9e-b066-3a6653686fd9) 
+
 If I didn't make the Transactions class, everything in the Ledger Class would not work
 
 ![Screenshot 2025-04-30 120434](https://github.com/user-attachments/assets/bd7a8ddb-7cd3-4bde-bb0d-8cd158313087) This class contains the Transaction class that stores the info needed to display what is in the ledger
 
 ![Screenshot 2025-04-30 121001](https://github.com/user-attachments/assets/5fbaec85-a5ff-4cb3-bf3e-a561f6bfbc67)Figuring out how to display the time was an issue until I learned about the LocalTime statement You can see this a few times in my code because the way I did it was to add the date and then use the time that is now to create a transaction was created in my computer. 
 
-![Formatted_HomeScreen_Code](https://github.com/user-attachments/assets/d5b353d2-8901-4336-a01c-1d587ac09a2e) The last issue I had was that the way it was displaying information in the terminal had to use the trim and splits to make that work
+![Formatted_HomeScreen_Code](https://github.com/user-attachments/assets/d5b353d2-8901-4336-a01c-1d587ac09a2e) The last issue I had was that the way it was displaying information in the terminal had to use the trim and split to make that work
 
 
 ##How I did this project
