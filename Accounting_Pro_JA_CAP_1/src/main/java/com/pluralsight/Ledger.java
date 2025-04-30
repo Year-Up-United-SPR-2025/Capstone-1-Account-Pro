@@ -40,7 +40,7 @@ public class Ledger {
         }
     }
 
-    //Deposits
+    //Deposits Credit
     private void showDeposits() {
         System.out.println("\n=== Deposits ===");
         for (Transaction t : transactions) {
@@ -50,7 +50,7 @@ public class Ledger {
         }
     }
 
-    //Payments
+    //Payments Debit
     private void showPayments() {
         System.out.println("\n=== Payments ===");
         for (Transaction t : transactions) {
