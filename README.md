@@ -34,4 +34,6 @@ For me personally, I wanted to separate my code into different classes because I
 I had to use things like W3Schools to understand classes and how they worked, and import that knowledge into my code. IntelliJ is good at importing libraries into your project as soon as you use them, so that was helpful; however, I did learn that you can use import java.io.*; import java.util.*; to import all your library needs, because these take all the libraries and use them together instead of importing lines of code, making it longer. I also used some Stackoverflow to see how debit and credit worked in classes when reading from a file.
 
 #Future for this project
+
+
 I will later try to use this in a website I'm building to showcase all the projects I have done during this bootcamp.
