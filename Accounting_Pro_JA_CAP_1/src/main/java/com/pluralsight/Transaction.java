@@ -10,7 +10,7 @@ public class Transaction {
         this.vendor = vendor;
         this.amount = amount;
     }
-    
+
     public String toString() {
         return date + " | " + vendor + " | " + amount;
     }
