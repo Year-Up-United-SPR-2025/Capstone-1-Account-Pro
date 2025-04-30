@@ -1,3 +1,4 @@
 # Capstone-1-Account-Pro
-Accounting Ledger Application
-About TBD
+#About
+This is my Capstone Project 1 Account Project.
+#
