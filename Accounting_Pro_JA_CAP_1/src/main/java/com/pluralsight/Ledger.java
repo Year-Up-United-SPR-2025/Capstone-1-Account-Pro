@@ -77,16 +77,18 @@ public class Ledger {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] parts = line.split(",");
-                if (parts.length == 3) {
+                String[] parts = line.split("\\|");
+                if (parts.length == 5) {
                     String date = parts[0].trim();
-                    String vendor = parts[1].trim();
-                    double amount = Double.parseDouble(parts[2].trim());
-                    transactions.add(new Transaction(date, vendor, amount));
+                    String time = parts[1].trim();
+                    String description = parts[2].trim();
+                    String vendor = parts[3].trim();
+                    double amount = Double.parseDouble(parts[4].trim());
+                    transactions.add(new Transaction(date, time, description, vendor, amount));
                 }
             }
-        } catch (Exception e) {
-            System.out.println("Failed to load transactions: " + e.getMessage());
+        } catch (IOException | NumberFormatException e) {
+            System.out.println("Error reading from file: " + e.getMessage());
         }
     }
 }
