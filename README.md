@@ -11,7 +11,8 @@ Some of the issues I came across were trying to read and write from the transact
 #Issues Screenshots
 
 
-![Screenshot 2025-04-30 120334](https://github.com/user-attachments/assets/96f1389f-da2b-4c9e-b066-3a6653686fd9) If I didn't make the Transactions class, everything in the Ledger Class would not work
+![Screenshot 2025-04-30 120334](https://github.com/user-attachments/assets/96f1389f-da2b-4c9e-b066-3a6653686fd9) 
+If I didn't make the Transactions class, everything in the Ledger Class would not work
 
 ![Screenshot 2025-04-30 120434](https://github.com/user-attachments/assets/bd7a8ddb-7cd3-4bde-bb0d-8cd158313087) This class contains the Transaction class that stores the info needed to display what is in the ledger
 
