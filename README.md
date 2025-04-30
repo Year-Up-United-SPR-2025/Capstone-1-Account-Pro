@@ -22,7 +22,7 @@ If I didn't make the Transactions class, everything in the Ledger Class would no
 
 ![Screenshot 2025-04-30 121001](https://github.com/user-attachments/assets/5fbaec85-a5ff-4cb3-bf3e-a561f6bfbc67)Figuring out how to display the time was an issue until I learned about the LocalTime statement You can see this a few times in my code because the way I did it was to add the date and then use the time that is now to create a transaction was created in my computer. 
 
-![Formatted Home Screen 2](https://github.com/user-attachments/assets/8868be17-aef6-436f-b0ec-4d33cfd5b172) The last issue I had was that the way it was displaying information in the terminal had to use the trim and split to make that work
+![Formatted Home Screen 2](https://github.com/user-attachments/assets/8868be17-aef6-436f-b0ec-4d33cfd5b172) The last issue I had was that the way it was displaying information in the terminal had to use the trim and split to make that work. I used a website named https://carbon.now.sh/ to show my code in an image if anyone else wants to use it.
 
 
 ##How I did this project
