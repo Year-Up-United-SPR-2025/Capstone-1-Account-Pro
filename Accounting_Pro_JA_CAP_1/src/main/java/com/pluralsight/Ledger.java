@@ -24,9 +24,9 @@ public class Ledger {
             String choice = scanner.nextLine().toUpperCase();
 
             if (choice.equals("D")) {
-                showDeposits();
+                showCreditTransactions();
             } else if (choice.equals("P")) {
-                showPayments();
+                showDebitPayments();
             } else if (choice.equals("R")) {
                 showReports();
             } else if (choice.equals("H")) {
@@ -41,8 +41,8 @@ public class Ledger {
     }
 
     //Deposits Credit
-    private void showDeposits() {
-        System.out.println("\n=== Deposits ===");
+    private void showCreditTransactions() {
+        System.out.println("\n=== Deposits (Credit) ===");
         for (Transaction t : transactions) {
             if (t.amount > 0) {
                 System.out.println(t);
@@ -51,8 +51,8 @@ public class Ledger {
     }
 
     //Payments Debit
-    private void showPayments() {
-        System.out.println("\n=== Payments ===");
+    private void showDebitPayments() {
+        System.out.println("\n=== Payments (Debit) ===");
         for (Transaction t : transactions) {
             if (t.amount < 0) {
                 System.out.println(t);
