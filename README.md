@@ -9,6 +9,8 @@ Trying to get this working was fun but a bit frustrating. It was also fun trying
 Some of the issues I came across were trying to read and write from the transactions.csv file. I had to use the BufferedReader and Writer classes to make this work. As you can see, the number of commits I made I have deleted classes or refactored my classes many times. Another issue I came across was when writing to the CSV, it would erase everything in it, so I created a test file to get around that and test my code there instead of the one that was the most important.
 
 #Issues Screenshots
+
+
 ![Screenshot 2025-04-30 120334](https://github.com/user-attachments/assets/96f1389f-da2b-4c9e-b066-3a6653686fd9) If I didn't make the Transactions class, everything in the Ledger Class would not work
 
 ![Screenshot 2025-04-30 120434](https://github.com/user-attachments/assets/bd7a8ddb-7cd3-4bde-bb0d-8cd158313087) This class contains the Transaction class that stores the info needed to display what is in the ledger
