@@ -5,14 +5,13 @@ This is my Capstone Project 1 Account Project.
 
 ##This Project
 
-Trying to get this working was fun but also a bit frustrating.
+Trying to get this working was fun, but also a bit frustrating.
 
 ##Issues I came across
 
 Some of the issues I came across were trying to read and write from the transactions.csv file. I had to use the BufferedReader and Writer classes to make this work. As you can see, the number of commits I made I have deleted classes or refactored my classes many times. Another issue I encountered was when writing to the CSV, it would erase everything in it, so I created a test file to get around that and test my code there instead of the most important one.
 
 #Issues Screenshots
-
 
 ![Transaction class from the ledger](https://github.com/user-attachments/assets/1a7cfeaf-b238-418c-90ea-90892c539c7b)
 
@@ -22,10 +21,12 @@ If I didn't make the Transactions class, everything in the Ledger Class would no
 
 This class contains the Transaction class that stores the info needed to display what is in the ledger
 
-![Screenshot 2025-04-30 121001](https://github.com/user-attachments/assets/5fbaec85-a5ff-4cb3-bf3e-a561f6bfbc67)Figuring out how to display the time was an issue until I learned about the LocalTime statement You can see this a few times in my code because the way I did it was to add the date and then use the time that is now to create a transaction was created in my computer. 
+![Reader Writer Time Class](https://github.com/user-attachments/assets/11566fbd-3010-49e4-bd09-8f7668444299)
+
+Figuring out how to display the time was an issue until I learned about the LocalTime statement. You can see this a few times in my code because the way I did it was to add the date and then use the time that is now to create a transaction that was created on my computer. 
 
 
-![Reader Writer Time Class](https://github.com/user-attachments/assets/30152f2e-3f98-490b-bb04-07c18817d5f2)
+![Ledger Screen Showing](https://github.com/user-attachments/assets/232226b0-1f58-4187-a047-1e5a4623fdc7)
 
 The last issue I had was that the way it was displaying information in the terminal required using the trim and split to make that work. I used a website named https://carbon.now.sh/ to show my code in an image, if anyone else wants to use it.
 
