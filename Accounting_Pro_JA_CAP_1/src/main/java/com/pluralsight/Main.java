@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Start the process from here
         startTransactionProcess(new Scanner(System.in));
     }
 
@@ -32,7 +31,7 @@ public class Main {
 
             System.out.print("Enter the Amount: ");
             double amount = scanner.nextDouble();
-            scanner.nextLine();
+            scanner.nextLine(); // consume leftover newline
 
             // Save to file (assuming the save method exists)
             Reader_Writer_Time.saveDeposit(date, description, vendor, amount);
@@ -44,15 +43,23 @@ public class Main {
             String answer = scanner.nextLine();
 
             if (!answer.equalsIgnoreCase("y")) {
-                keepRunning = false; // exit loop
+                // Ask if user wants to exit the app
+                System.out.print("\nDo you want to exit the app? (y/n): ");
+                String exitAnswer = scanner.nextLine();
+
+                if (exitAnswer.equalsIgnoreCase("y")) {
+                    ExitHandler exitHandler = new ExitHandler(scanner);
+                    exitHandler.waitForExit();
+                } else {
+                    // Show all transactions and go to home screen
+                    Reader_Writer_Time.readDeposits();
+                    Ledger ledger = new Ledger();
+                    ledger.showHome();
+                }
+
+                // Stops the loop
+                keepRunning = false;
             }
         }
-
-        // After finishing, display all transactions (assuming the read method exists)
-        Reader_Writer_Time.readDeposits();
-
-        // Return to the Ledger home menu after finishing
-        Ledger ledger = new Ledger();
-        ledger.showHome();
     }
 }
