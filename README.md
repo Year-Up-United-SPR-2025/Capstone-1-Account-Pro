@@ -28,7 +28,7 @@ Figuring out how to display the time was an issue until I learned about the Loca
 
 ![Ledger Screen Showing](https://github.com/user-attachments/assets/232226b0-1f58-4187-a047-1e5a4623fdc7)
 
-The last issue I had was that the way it was displaying information in the terminal required using the trim and split to make that work. I used a website named https://carbon.now.sh/ to show my code in an image, if anyone else wants to use it.
+The last issue I had was that the way it was displaying information in the terminal required using the trim and split to make that work. I used a website named https://carbon.now.sh/ to show my code in the images, if anyone else wants to use it.
 
 
 ## How I did this project
