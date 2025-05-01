@@ -33,16 +33,18 @@ public class Reader_Writer_Time {
     public static void readDeposits() {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
+
+            // Print header once
+            System.out.println("Date       | Time     | Description       | Vendor       | Amount");
+            System.out.println("---------------------------------------------------------------");
+
             while ((line = reader.readLine()) != null) {
                 // Split the line by "|"
                 String[] parts = line.split("\\|");
                 if (parts.length == 5) {
-                    // Print all parts in a single line with labels
-                    System.out.println("Date: " + parts[0] +
-                            " | Time: " + parts[1] +
-                            " | Description: " + parts[2] +
-                            " | Vendor: " + parts[3] +
-                            " | Amount: $" + parts[4]);
+                    // Print all parts in a single line
+                    System.out.printf("%-10s | %-8s | %-16s | %-12s | $%s%n",
+                            parts[0], parts[1], parts[2], parts[3], parts[4]);
                 }
             }
         } catch (IOException e) {
