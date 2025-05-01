@@ -20,7 +20,8 @@ If I didn't make the Transactions class, everything in the Ledger Class would no
 
 This class contains the Transaction class that stores the info needed to display what is in the ledger
 
-![Reader Writer Time Class](https://github.com/user-attachments/assets/11566fbd-3010-49e4-bd09-8f7668444299)
+![Reader Writer Time Class 2](https://github.com/user-attachments/assets/f8d835e0-df98-414c-b37d-99f1a79cf51c)
+
 
 Figuring out how to display the time was an issue until I learned about the LocalTime statement. You can see this a few times in my code because the way I did it was to add the date and then use the time that is now to create a transaction that was created on my computer. 
 
