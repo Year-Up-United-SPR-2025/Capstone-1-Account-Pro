@@ -31,7 +31,7 @@ Figuring out how to display the time was an issue until I learned about the Loca
 The last issue I had was that the way it was displaying information in the terminal required using the trim and split to make that work. I used a website named https://carbon.now.sh/ to show my code in an image, if anyone else wants to use it.
 
 ---
-####How I did this project
+##How I did this project
 ***
 For me personally, I wanted to separate my code into different classes because I wanted my main to be as short and the only thing people need to see is my main and its classes, my other classes, which are longer under the hood. I will say, however, I did get a little lost at first separating my code. At first, I was going to put everything in the main, but I figured out pretty quickly that it would be hard. Another issue I would come across was putting comments in my code, so if I come across an issue, I can fix it quickly, which helped me immensely. 
 ---
