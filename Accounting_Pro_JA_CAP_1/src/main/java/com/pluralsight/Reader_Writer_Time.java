@@ -34,7 +34,16 @@ public class Reader_Writer_Time {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line); // Print each record
+                // Split the line by "|"
+                String[] parts = line.split("\\|");
+                if (parts.length == 5) {
+                    // Print all parts in a single line with labels
+                    System.out.println("Date: " + parts[0] +
+                            " | Time: " + parts[1] +
+                            " | Description: " + parts[2] +
+                            " | Vendor: " + parts[3] +
+                            " | Amount: $" + parts[4]);
+                }
             }
         } catch (IOException e) {
             System.out.println("Error reading from file: " + e.getMessage());

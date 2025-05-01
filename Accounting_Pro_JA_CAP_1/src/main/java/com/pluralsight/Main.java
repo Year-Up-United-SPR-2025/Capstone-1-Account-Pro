@@ -49,7 +49,6 @@ public class Main {
         }
 
         // After finishing, display all transactions (assuming the read method exists)
-        System.out.println("\nDate|Time|Description|Vendor|Amount");
         Reader_Writer_Time.readDeposits();
 
         // Return to the Ledger home menu after finishing
