@@ -26,7 +26,7 @@ public class Main {
             System.out.print("Enter the Description: ");
             String description = scanner.nextLine();
 
-            System.out.print("Add your Vendor: ");
+            System.out.print("Add the Vendor: ");
             String vendor = scanner.nextLine();
 
             System.out.print("Enter the Amount: ");
