@@ -31,7 +31,7 @@ public class Main {
 
             System.out.print("Enter the Amount: ");
             double amount = scanner.nextDouble();
-            scanner.nextLine(); // consume leftover newline
+            scanner.nextLine();
 
             // Save to file (assuming the save method exists)
             Reader_Writer_Time.saveDeposit(date, description, vendor, amount);
