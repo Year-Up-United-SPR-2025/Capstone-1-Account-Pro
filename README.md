@@ -23,12 +23,12 @@ This class contains the Transaction class that stores the info needed to display
 ![Reader Writer Time Class 2](https://github.com/user-attachments/assets/f8d835e0-df98-414c-b37d-99f1a79cf51c)
 
 
-Figuring out how to display the time was an issue until I learned about the LocalTime statement. You can see this a few times in my code because the way I did it was to add the date and then use the time that is now to create a transaction that was created on my computer. 
+Figuring out how to display the time was an issue until I learned about the LocalTime statement. You can see this a few times in my code because the way I did it was to add the date and then use the time that is now to create a transaction that was made on my computer. 
 
 
 ![Ledger Screen Showing](https://github.com/user-attachments/assets/232226b0-1f58-4187-a047-1e5a4623fdc7)
 
-The last issue I had was that the way it was displaying information in the terminal required using the trim and split to make that work. I used a website named https://carbon.now.sh/ to show my code in the images, if anyone else wants to use it.
+The last issue I had was that the way it displayed information in the terminal required using the trim and split to make it work. I used a website named https://carbon.now.sh/ to show my code in the images, if anyone else wants to use it.
 
 
 ## How I did this project
@@ -37,7 +37,7 @@ For me personally, I wanted to separate my code into different classes because I
 
 # Things I used to build my project
 
-I had to use things like W3Schools to understand classes and how they worked, and import that knowledge into my code. IntelliJ is good at importing libraries into your project as soon as you use them, so that was helpful; however, I did learn that you can use import java.io.*; import java.util.*; to import all your library needs, because these take all the libraries and use them together instead of importing lines of code, making it longer. An issue that occurs with just using java.io.*; import java.util.*; is that you only see that instead of seeing the classes, so you can get lost with what imports you're using. I also used some Stackoverflow to see how debit and credit worked in classes when reading from a file.
+I had to use things like W3Schools to understand classes and how they worked, and import that knowledge into my code. IntelliJ is good at importing libraries into your project as soon as you use them, so that was helpful; however, I did learn that you can use import java.io.*; import java.util.*; to import all your library needs, because these take all the libraries and use them together instead of importing lines of code, making it longer. An issue that occurs with just using java.io.*; import java.util.*; is that you only see that instead of seeing the classes, so you can get lost with what imports you're using. I also used some Stackoverflow to see how debit and credit worked in classes when reading from a file. Using the ArrayList method to call over the transaction.csv file entries to show up in the console. Using the Reader classes to read the entries, the writer classes to write any entries that were put in the console, and using the Time/Date Classes to get the time of when those entries are created originally using the date classes to just get the date of now but it soly trandfiormed into me just having entered the date instead but still using the date class for the AM/PM.
 
 
 # Future for this project
